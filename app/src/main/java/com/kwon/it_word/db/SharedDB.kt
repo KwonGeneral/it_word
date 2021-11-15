@@ -1,17 +1,21 @@
 package com.kwon.it_word.db
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import java.lang.Exception
 
-class SharedDB(context: Context) {
+class SharedDB(val context: Context) {
 
     companion object {
-        var ins: SharedDB? = null
+        @SuppressLint("StaticFieldLeak")
+        var instance: SharedDB? = null
         fun getInstance(context: Context): SharedDB? {
-            if (ins == null)
-                ins = SharedDB(context)
-            return ins
+            instance?.let {
+                return it
+            }
+            instance = SharedDB(context)
+            return instance!!
         }
     }
 
@@ -30,10 +34,6 @@ class SharedDB(context: Context) {
         prefs.edit().putString(key, str).apply()
     }
 
-    fun getToken(): String {
-        return prefs.getString("AccessToken", "").toString()
-    }
-
     fun getFcmToken(): String {
         return prefs.getString("fcm_token", "").toString()
     }
@@ -41,7 +41,7 @@ class SharedDB(context: Context) {
     fun setFcmToken(fcm_token: String) {
         prefs.edit().putString("fcm_token", fcm_token).apply()
     }
-    fun isAutoLogin(): Boolean? {
+    fun isAutoLogin(): Boolean {
         return false
     }
 

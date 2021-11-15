@@ -5,6 +5,6 @@ class Define {
         const val EMPTY_STR:String = "EMPTY"
         const val QUESTION:String = "QUESTION_FRAGMENT"
         const val CHANNEL:String = "Chat_Channel"
-        const val OCHANNEL:String = "O_Chat_Channel"
+        const val O_CHANNEL:String = "O_Chat_Channel"
     }
 }

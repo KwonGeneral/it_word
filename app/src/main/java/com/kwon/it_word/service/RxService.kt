@@ -20,11 +20,6 @@ interface RxService {
                     GsonConverterFactory.create(GsonBuilder().setLenient().create())
                 )
                 .baseUrl("url 입력")
-                .client(OkHttpClient.Builder().addInterceptor { chain ->
-                    SharedDB.getInstance(context)?.getToken()!!.let {
-                        chain.proceed(chain.request().newBuilder().build())
-                    }
-                }.build())
                 .build()
         }
     }

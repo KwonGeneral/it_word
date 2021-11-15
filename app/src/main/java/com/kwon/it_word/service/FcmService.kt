@@ -15,7 +15,7 @@ import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import com.kwon.it_word.R
 import com.kwon.it_word.contain.Define.Companion.CHANNEL
-import com.kwon.it_word.contain.Define.Companion.OCHANNEL
+import com.kwon.it_word.contain.Define.Companion.O_CHANNEL
 import com.kwon.it_word.activity.MainActivity
 import com.squareup.okhttp.Dispatcher
 import kotlinx.coroutines.*
@@ -55,7 +55,7 @@ class FcmService: FirebaseMessagingService() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(CHANNEL,
-                OCHANNEL,
+                O_CHANNEL,
                 NotificationManager.IMPORTANCE_DEFAULT)
             notificationManager.createNotificationChannel(channel)
         }
