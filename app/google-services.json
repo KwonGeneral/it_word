@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070715006444",
+    "project_id": "it-word-4e085",
+    "storage_bucket": "it-word-4e085.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070715006444:android:6341e15a81441c4085e4c9",
+        "android_client_info": {
+          "package_name": "com.kwon.it_word"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070715006444-bo425l12i31vibe4tkdv9bh8b3d7irj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDqcK37zoxx3i_Ngu3xqDjd4zDIuVZZoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070715006444-bo425l12i31vibe4tkdv9bh8b3d7irj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
