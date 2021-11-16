@@ -6,10 +6,10 @@ import androidx.lifecycle.MutableLiveData
 import com.kwon.it_word.contain.FragmentDefine.Companion.CHAT_FRAGMENT
 
 class ScreenVM(val context: Context) {
-    var screen_status = MutableLiveData<String>()
+    var screenStatus = MutableLiveData<String>()
 
     init {
-        screen_status.postValue(CHAT_FRAGMENT)
+        screenStatus.postValue(CHAT_FRAGMENT)
     }
 
     companion object {
@@ -24,3 +24,4 @@ class ScreenVM(val context: Context) {
         }
     }
 }
+
