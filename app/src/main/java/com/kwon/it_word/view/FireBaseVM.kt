@@ -16,7 +16,7 @@ import com.kwon.it_word.contain.FireBaseDefine.Companion.FIREBASE_STORE_COLLECTI
 import com.kwon.it_word.contain.FireBaseDefine.Companion.FIREBASE_STORE_DATA_CREATED_AT
 import com.kwon.it_word.contain.FireBaseDefine.Companion.FIREBASE_STORE_DATA_FCM_TOKEN
 import com.kwon.it_word.contain.FireBaseDefine.Companion.FIREBASE_STORE_DATA_PHONE_MODEL
-import com.kwon.it_word.db.FireStoreDB
+import com.kwon.it_word.db.FireStoreData
 import com.kwon.it_word.db.SharedDB
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -49,7 +49,7 @@ class FireBaseVM(val context: Context) {
                             }
                             LocalDateTime.now().format(DateTimeFormatter.ofPattern(DateDefine.DEFAULT.format))?.let { time ->
                                 Build.MODEL?.let { model ->
-                                    db.add(FireStoreDB(fcm, model, time)).apply {
+                                    db.add(FireStoreData(fcm, model, time)).apply {
                                         addOnSuccessListener {
                                             fcmStatusMessage.postValue(FIREBASE_FCM_CREATE_SUCCESS)
                                             SharedDB.getInstance(context)?.setString(FIREBASE_STORE_DATA_FCM_TOKEN, fcm)
