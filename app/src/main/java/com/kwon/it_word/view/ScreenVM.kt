@@ -4,12 +4,13 @@ import android.annotation.SuppressLint
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import com.kwon.it_word.contain.FragmentDefine.Companion.CHAT_FRAGMENT
+import com.kwon.it_word.contain.FragmentDefine.Companion.HOME_FRAGMENT
 
 class ScreenVM(val context: Context) {
     var screenStatus = MutableLiveData<String>()
 
     init {
-        screenStatus.postValue(CHAT_FRAGMENT)
+        screenStatus.postValue(HOME_FRAGMENT)
     }
 
     companion object {

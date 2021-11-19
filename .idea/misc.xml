@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/drawable-v24/click_effect.xml" value="0.5697916666666667" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/drawable-v24/default_border.xml" value="0.30787037037037035" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/drawable-v24/input_cursor.xml" value="0.30787037037037035" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/drawable-v24/send_message_border.xml" value="0.30787037037037035" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/drawable/send_message.xml" value="0.30787037037037035" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/drawable/send_message_input.xml" value="0.30787037037037035" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/fragment_chat.xml" value="0.14317976513098465" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/fragment_mypage.xml" value="0.14317976513098465" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/fragment_note.xml" value="0.14317976513098465" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/fragment_quiz.xml" value="0.25" />
+        <entry key="..\:/Development/GitHubProject/it_word/app/src/main/res/layout/list_item_quiz.xml" value="0.2935185185185185" />
         <entry key="..\:/Users/ktw/Desktop/GitHubBackupProject/it_word/app/src/main/res/layout/activity_main.xml" value="0.2203125" />
         <entry key="..\:/Users/ktw/Desktop/GitHubBackupProject/it_word/app/src/main/res/layout/fragment_chat.xml" value="0.10157041540020263" />
         <entry key="..\:/Users/ktw/Desktop/GitHubBackupProject/it_word/app/src/main/res/layout/fragment_mypage.xml" value="0.10157041540020263" />
@@ -12,7 +25,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

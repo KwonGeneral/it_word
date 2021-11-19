@@ -1,14 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".widget.QuizFragment">
+    android:background="#ffffff"
+    tools:context=".fragment.QuizFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quiz_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_send_message_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/quiz_send_message_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="퀴즈~" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_message_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/quiz_send_message_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/send_message_input"
+                android:ems="10"
+                android:hint="정답을 입력하세요"
+                android:inputType="none"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="50dp"
+                android:paddingBottom="10dp"
+                android:textColor="#ba000000"
+                android:textColorHighlight="#999999"
+                android:textColorHint="#66000000"
+                android:textCursorDrawable="@drawable/input_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:id="@+id/quiz_send_message_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/send_message" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
